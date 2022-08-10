@@ -28,7 +28,7 @@ You will need the **baseline conversion rate (bcr)** and the **minimum detectabl
 
 ![](../.gitbook/assets/image.png)
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (2).png>)
 
 ### Productds
 
