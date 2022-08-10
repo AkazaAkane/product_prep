@@ -1,15 +1,13 @@
-# Data Science Product Intervew Prep
+---
+description: A collection of DS interview prep by Yuhao Chen
+---
 
-## Video for reference
+# Data Scientist Interview
 
-[Julie Zhuo: How a Facebook Designer Thinks](https://www.youtube.com/watch?v=b78zq-kimVs)
-
-[Udacity AB test](https://www.udacity.com/course/ab-testing--ud257)
-
-[Facebook product interview](https://www.youtube.com/watch?v=dt7OrazE6SQ&t=119s)
-
-[Victor Chang - case interview workshop](https://www.youtube.com/watch?v=fBwUxnTpTBo&list=PLL1jLM18SWP1uF1ReVpWY9MSpFXWdmEfW)
-
-[stellar peers - FB 官方推荐平台](https://stellarpeers.com/)
-
-## 经验总结 （updating）
+1. [Statistics](statistics/)
+2. Machine Learning (DL)
+3. [AB testing and Product Sense](ab-testing-and-product-sense/)
+4. SQL
+5. Data Structure and Algorithm
+6. Applied Data Science
+7. [Behavior Questions](behavioral-questions.md)
