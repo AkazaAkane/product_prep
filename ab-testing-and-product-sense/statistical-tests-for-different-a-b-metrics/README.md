@@ -140,3 +140,7 @@ _**How should we test user average metrics?**_
 We can approach this problem with **simulation**. Since the two distributions are deterministic and independent, we can acquire their own probability density function (PDF) by iteratively drawing samples. If then multiplying the two PDFs, we could derive an empirical PDF for the SUM metric. The p-value can thus be calculated by investigating how the SUM statistic from what we actually see in the treatment group fit into our simulated distribution.
 
 This is relatively a daunting process with a fair amount of approximations. Therefore, it is usually not recommended. I would suggest testing the effectiveness/statistical significance of the product feature using the user average metric and calculating the incremental lift in the SUM metrics if the management really cares.
+
+## Reference
+
+{% embed url="https://towardsdatascience.com/how-to-select-the-right-statistical-tests-for-different-a-b-metrics-c8a1865851e#f15d" %}
