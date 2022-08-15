@@ -21,7 +21,7 @@
   * [Statistical Tests for Different A/B Metrics](ab-testing-and-product-sense/statistical-tests-for-different-a-b-metrics/README.md)
     * [z test](ab-testing-and-product-sense/statistical-tests-for-different-a-b-metrics/z-test.md)
     * [t test](ab-testing-and-product-sense/statistical-tests-for-different-a-b-metrics/t-test.md)
-    * [Chi-squared test/Fisher's exact test](ab-testing-and-product-sense/statistical-tests-for-different-a-b-metrics/chi-squared-test-fishers-exact-test.md)
+    * [Chi-squared test](ab-testing-and-product-sense/statistical-tests-for-different-a-b-metrics/chi-squared-test.md)
 * [Applied Data Science](applied-data-science/README.md)
   * [Missing Data](applied-data-science/missing-data.md)
 * [Behavioral Questions](behavioral-questions.md)

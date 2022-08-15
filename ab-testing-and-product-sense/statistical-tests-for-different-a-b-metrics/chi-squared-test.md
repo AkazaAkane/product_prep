@@ -1,4 +1,4 @@
-# Chi-squared test/Fisher's exact test
+# Chi-squared test
 
 ## Chi-Square Test <a href="#769b" id="769b"></a>
 
@@ -59,3 +59,6 @@ Third, regarding the metrics of A/B testing. We can use other metrics that arenâ
 
 Finally, we can generalize A/B testing to include more than two non-control variants (a.k.a. **multivariate A/B testing**). Again, it results in a (slightly) different statistical method used to draw conclusions from them.
 
+## Reference
+
+{% embed url="https://medium.com/bukalapak-data/meet-the-engine-of-a-b-testing-chi-square-test-30e8a8ab44c5" %}
