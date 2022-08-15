@@ -17,3 +17,8 @@ The trick is, how to calculate the quantity “given the marginals, what is the 
 ![Contingency table](https://bytepawn.com/images/contingency\_table3.PNG)
 
 Imagine this: we have a total of N=10,000 marbles. Each marble is one of C=3 colors (**No conversion, Monthly, Annual**). There are a total of 7,922 marbles **No conversion** marbles, 1,085 **Monthly** conversion marbles, etc. All these marbles are in one big urn. We start drawing marbles; what’s the probability that the first 5,916 drawn will be colored **(No conversion, Monthly, Annual) = (4748, 595, 573)**, irrespective or the order they are drawn? We can break this into two probabilities that we multiply: what is the probability that of 5,916 drawn the colors are **(No conversion, Rest) = (4748, 595+573)** from an urn that contains **(No conversion, Rest) = (7922, 1085+993)** marbles, multiplied by, what is the probability that of the rest 595+573=1,168 drawn the colors are **(Monthly, Annual) = (595, 573)** from an urn that contains **(Monthly, Annual) = (1085, 993)** marbles. These individual probabilities are given by the hypergeometric probability P(X=k|N,K,n), ie. what is the probability of drawing k red marbles from an urn that contains a total of N marbles, K of which are red, of total n drawn (k≤n). It is P(X=k|N,K,n)=(Kk)(N−Kn−k)(Nn). Then, we go on and calculate the same probabilities in the second row, **but keeping in mind that we have already removed (4748, 595, 573) marbles from the urn**. The ordering of the rows doesn’t matter.
+
+## Reference
+
+{% embed url="https://towardsdatascience.com/fishers-exact-fb49432e55b5" %}
+
