@@ -33,3 +33,7 @@ The single biggest limitation of multivariate testing is the amount of traffic n
 Conducting an A/B test is often easier than a multivariate test, especially when analysing the results.&#x20;
 
 Multivariate tests are comparatively complex and slow to set up, and slower to run. All the time lost during its setup phase and course of running creates an opportunity cost. Amidst the time MVT takes to show meaningful results, you could have run dozens of A/B tests and drawn conclusions. A/B tests are quick to set up and also provide definite answers to many specific problems. &#x20;
+
+## Reference
+
+[https://vwo.com/multivariate-testing/#advantages-and-disadvantages-of-mvt](https://vwo.com/multivariate-testing/#advantages-and-disadvantages-of-mvt)
