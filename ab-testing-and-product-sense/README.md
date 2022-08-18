@@ -27,13 +27,9 @@ Reduce the variance by Blocking –run experiment within sub-groups
 
 2.statistics：binomial distribution 二项分布 （success and failure） 计算confidence interval：用normal distribution算
 
-![https://pic3.zhimg.com/80/v2-de5c65cd686100eb8a5b3bfec8ace092\_1440w.jpg](file:///Users/yuhaochen/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip\_image003.jpg)
-
 3\. hypothesis testing
 
 4\. pooled standard error： d服从个啥分布？
-
-![https://pic3.zhimg.com/80/v2-e84d8b558bcf5d42fbadec03cd8b5c0a\_1440w.jpg](file:///Users/yuhaochen/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip\_image004.jpg)
 
 5.statistical significance is about repeatability. 但是也要business上practically significant(这个effect的程度要有意义)。并且statistical significance（**α**：if H0 is ture, the probability you happen to observe effect in your sample）和sample size有很大的关系：if the sample size is large enough, even tiny differences from the hypothesis value will be found statistically significant。sample size给了很大可信度。所以，你在size你的experiment的时候要确保：statistical significance bar要**lower than** practically significant bar(为啥？stats的要更加严格？比如business要看见ctr有2%的change算是significant，因为越小的change越难observe到，那么希望用statistical看到的就的change就要越小，比如1%。所以由此在决定：我想看见1%的change，我想显著性α=5%，我该用多大的sample size)
 

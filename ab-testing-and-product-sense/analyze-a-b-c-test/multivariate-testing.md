@@ -36,4 +36,4 @@ Multivariate tests are comparatively complex and slow to set up, and slower to r
 
 ## Reference
 
-[https://vwo.com/multivariate-testing/#advantages-and-disadvantages-of-mvt](https://vwo.com/multivariate-testing/#advantages-and-disadvantages-of-mvt)
+{% embed url="https://vwo.com/multivariate-testing/#advantages-and-disadvantages-of-mvt" %}
