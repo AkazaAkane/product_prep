@@ -4,6 +4,8 @@ Multiple comparisons arise when a statistical analysis involves multiple simulta
 
 ### Family-wise error rate (FWER)
 
+FWER is appropriate when you want to guard against ANY false positives. However, in many cases (particularly in genomics) we can live with a certain number of false positives. In these cases, the more relevant quantity to control is the false discovery rate (FDR)
+
 {% embed url="https://en.wikipedia.org/wiki/Family-wise_error_rate#Controlling_procedures" %}
 
 ### False discovery rate(FDR) <a href="#firstheading" id="firstheading"></a>
