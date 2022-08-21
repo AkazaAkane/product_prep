@@ -12,4 +12,8 @@ FWER is appropriate when you want to guard against ANY false positives. However,
 
 {% embed url="https://en.wikipedia.org/wiki/False_discovery_rate" %}
 
-{% embed url="https://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf" %}
+### Other Resources
+
+{% embed url="https://www.stat.cmu.edu/~aramdas/multiple.html" %}
+
+[https://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf](https://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture10.pdf)
