@@ -4,13 +4,9 @@
 
 A statistical hypothesis test makes an assumption about the outcome, called the null hypothesis.
 
-For example, the null hypothesis for the Pearson’s correlation test is that there is no relationship between two variables. The null hypothesis for the Student’s t test is that there is no difference between the means of two populations.
-
-The test is often interpreted using a p-value, which is the probability of observing the result given that the null hypothesis is true, not the reverse, as is often the case with misinterpretations.
+The test is often interpreted using a p-value, which is the probability of observing the result given that the null hypothesis is true.
 
 * **p-value (p)**: Probability of obtaining a result equal to or more extreme than was observed in the data.
-
-In interpreting the p-value of a significance test, you must specify a significance level, often referred to as the Greek lower case letter alpha (a). A common value for the significance level is 5% written as 0.05.
 
 The p-value is interested in the context of the chosen significance level. A result of a significance test is claimed to be “_statistically significant_” if the p-value is less than the significance level. This means that the null hypothesis (that there is no result) is rejected.
 
@@ -27,10 +23,6 @@ There are two types of errors; they are:
 
 * **Type I Error**. Reject the null hypothesis when there is in fact no significant effect (false positive). The p-value is optimistically small.
 * **Type II Error**. Not reject the null hypothesis when there is a significant effect (false negative). The p-value is pessimistically large.
-
-In this context, we can think of the significance level as the probability of rejecting the null hypothesis if it were true. That is the probability of making a Type I Error or a false positive.
-
-
 
 ### What Is Statistical Power?
 
