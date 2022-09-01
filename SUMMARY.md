@@ -3,6 +3,7 @@
 * [Data Scientist Interview](README.md)
 * [Statistics](statistics/README.md)
   * [Lasso and Ridge](statistics/lasso-and-ridge.md)
+  * [Statistical Power and Power Analysis](statistics/statistical-power-and-power-analysis.md)
 * [Machine Learning](machine-learning/README.md)
   * [Imbalanced Data](machine-learning/imbalanced-data.md)
   * [k-nearest neighbors (knn)](machine-learning/k-nearest-neighbors-knn.md)
