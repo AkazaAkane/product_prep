@@ -32,8 +32,8 @@ Statistical power, or the power of a hypothesis test is the probability that the
 
 The higher the statistical power for a given experiment, the lower the probability of making a Type II (false negative) error. That is the higher the probability of detecting an effect when there is an effect. In fact, the power is precisely the inverse of the probability of a Type II error.
 
-| Power = 1 - Type II ErrorPr(True Positive) = 1 - Pr(False Negative) |
-| ------------------------------------------------------------------- |
+| Power = 1 - Type II Error Pr(True Positive) = 1 - Pr(False Negative) |
+| -------------------------------------------------------------------- |
 
 More intuitively, the statistical power can be thought of as the probability of accepting an alternative hypothesis, when the alternative hypothesis is true.
 
@@ -42,9 +42,7 @@ When interpreting statistical power, we seek experiential setups that have high 
 * **Low Statistical Power**: Large risk of committing Type II errors, e.g. a false negative.
 * **High Statistical Power**: Small risk of committing Type II errors.
 
-Experimental results with too low statistical power will lead to invalid conclusions about the meaning of the results. Therefore a minimum level of statistical power must be sought.
-
-It is common to design experiments with a statistical power of 80% or better, e.g. 0.80. This means a 20% probability of encountering a Type II area. This different to the 5% likelihood of encountering a Type I error for the standard value for the significance level.
+It is common to design experiments with a statistical power of 80% or better, e.g. 0.80. This means a 20% probability of encountering a Type II area.&#x20;
 
 ### Power Analysis
 
@@ -57,29 +55,15 @@ Statistical power is one piece in a puzzle that has four related parts; they are
 
 All four variables are related. For example, a larger sample size can make an effect easier to detect, and the statistical power can be increased in a test by increasing the significance level.
 
-A power analysis involves estimating one of these four parameters given values for three other parameters. This is a powerful tool in both the design and in the analysis of experiments that we wish to interpret using statistical hypothesis tests.
-
-For example, the statistical power can be estimated given an effect size, sample size and significance level. Alternately, the sample size can be estimated given different desired levels of significance.
+A power analysis involves estimating one of these four parameters given values for three other parameters. For example, the statistical power can be estimated given an effect size, sample size and significance level. Alternately, the sample size can be estimated given different desired levels of significance.
 
 > Power analysis answers questions like “how much statistical power does my study have?” and “how big a sample size do I need?”.
 
-— Page 56, [The Essential Guide to Effect Sizes: Statistical Power, Meta-Analysis, and the Interpretation of Research Results](https://amzn.to/2JDcwSe), 2010.
-
 Perhaps the most common use of a power analysis is in the estimation of the minimum sample size required for an experiment.
-
-> Power analyses are normally run before a study is conducted. A prospective or a priori power analysis can be used to estimate any one of the four power parameters but is most often used to estimate required sample sizes.
-
-— Page 57, [The Essential Guide to Effect Sizes: Statistical Power, Meta-Analysis, and the Interpretation of Research Results](https://amzn.to/2JDcwSe), 2010.
-
-As a practitioner, we can start with sensible defaults for some parameters, such as a significance level of 0.05 and a power level of 0.80. We can then estimate a desirable minimum effect size, specific to the experiment being performed. A power analysis can then be used to estimate the minimum sample size required.
-
-In addition, multiple power analyses can be performed to provide a curve of one parameter against another, such as the change in the size of an effect in an experiment given changes to the sample size. More elaborate plots can be created varying three of the parameters. This is a useful tool for experimental design.
 
 ### Student’s t Test Power Analysis
 
-We can make the idea of statistical power and power analysis concrete with a worked example.
-
-In this section, we will look at the Student’s t test, which is a statistical hypothesis test for comparing the means from two samples of Gaussian variables. The assumption, or null hypothesis, of the test is that the sample populations have the same mean, e.g. that there is no difference between the samples or that the samples are drawn from the same underlying population.
+We will look at the Student’s t test, which is a statistical hypothesis test for comparing the means from two samples of Gaussian variables. The assumption, or null hypothesis, of the test is that the sample populations have the same mean, e.g. that there is no difference between the samples or that the samples are drawn from the same underlying population.
 
 The test will calculate a p-value that can be interpreted as to whether the samples are the same (fail to reject the null hypothesis), or there is a statistically significant difference between the samples (reject the null hypothesis). A common significance level for interpreting the p-value is 5% or 0.05.
 
@@ -105,17 +89,25 @@ A note on sample size: the function has an argument called ratio that is the rat
 
 The TTestIndPower instance must be created, then we can call the _solve\_power()_ with our arguments to estimate the sample size for the experiment.
 
-| <p># perform power analysis</p><p>analysis = TTestIndPower()</p><p>result = analysis.solve_power(effect, power=power, nobs1=None, ratio=1.0, alpha=alpha)</p> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+# estimate sample size via power analysis
+from statsmodels.stats.power import TTestIndPower
 
-The complete example is listed below.
+# parameters for power analysis
+effect = 0.8
+alpha = 0.05
+power = 0.8
 
-| <p># estimate sample size via power analysis</p><p>from statsmodels.stats.power import TTestIndPower</p><p></p><p># parameters for power analysis</p><p>effect = 0.8</p><p>alpha = 0.05</p><p>power = 0.8</p><p></p><p># perform power analysis</p><p>analysis = TTestIndPower()</p><p>result = analysis.solve_power(effect, power=power, nobs1=None, ratio=1.0, alpha=alpha)</p><p>print('Sample Size: %.3f' % result)</p> |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+# perform power analysis
+analysis = TTestIndPower()
+result = analysis.solve_power(effect, power=power, nobs1=None, ratio=1.0, alpha=alpha)
+print('Sample Size: %.3f' % result)
+
+-----------------
+Sample Size: 25.525
+```
 
 Running the example calculates and prints the estimated number of samples for the experiment as 25. This would be a suggested minimum number of samples required to see an effect of the desired size.
-
-Sample Size: 25.525
 
 ## Reference
 
