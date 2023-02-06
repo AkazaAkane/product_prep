@@ -143,7 +143,7 @@ Although we previously rejected the null hypotheses in ANOVA, our analysis is no
 
 A post-hoc test is required to determine the clear winner. There are numerous tests available, but we will use the most commonly used one, known as the Tukey Honestly Significant Difference (HSD) test.
 
-A Tukey HSD test compares each pair of group means and calculates the corresponding q statistic. What exactly is the q statistic? It is essentially a variant of the t statistic (as used in the infamous t-test) that accounts for Type I error inflation due to multiple testing. Read _“The problem with A/B/C tests”_ section on [my previous tutorial](https://medium.com/bukalapak-data/how-to-analyze-an-a-b-c-testing-658e18b5596d) to understand about the issue on multiple testing. Therefore, **we can think of Tukey HSD test as a more conservative t-test** (i.e. it requires greater evidence for rejecting the null hypothesis).
+A Tukey HSD test compares each pair of group means and calculates the corresponding q statistic. What exactly is the q statistic? It is essentially a variant of the t statistic (as used in the infamous t-test) that accounts for Type I error inflation due to multiple testing. Therefore, **we can think of Tukey HSD test as a more conservative t-test** (i.e. it requires greater evidence for rejecting the null hypothesis).
 
 See Figure 5 below for the comparison of critical values from t-distribution and multiple versions of q distributions (depending on the number of means being considered — to test in total). We can clearly see that the greater the number of means, the higher the critical value — and thus the more conservative test we have.
 
