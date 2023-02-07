@@ -26,7 +26,7 @@ You will need the **baseline conversion rate (bcr)** and the **minimum detectabl
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-26 at 1.06.25 AM.png>)
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (6).png>)
 
 ![](<../.gitbook/assets/image (2).png>)
 
