@@ -11,6 +11,7 @@
   * [k-means](machine-learning/k-means.md)
   * [supervised vs unsupervised learning](machine-learning/supervised-vs-unsupervised-learning.md)
   * [Decision Tree](machine-learning/decision-tree.md)
+  * [Ensemble](machine-learning/ensemble.md)
   * [Precision and Recall](machine-learning/precision-and-recall.md)
 * [AB Testing and Product Sense](ab-testing-and-product-sense/README.md)
   * [A/B Testing : Pitfalls, Baysian & Math Behind](ab-testing-and-product-sense/a-b-testing-pitfalls-baysian-and-math-behind/README.md)

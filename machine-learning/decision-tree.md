@@ -40,13 +40,13 @@ Information gain is biased towards test with many occurances. Consider a feature
 
 C4.5 algorithm is improvement over ID3 algorithm, where “**C**” is shows algorithm is written in C and **4.5** specifics version of algorithm.
 
-<img src="../.gitbook/assets/image.png" alt="" data-size="original">, Intrinsic Information: ![](<../.gitbook/assets/image (8).png>)
+<img src="../.gitbook/assets/image.png" alt="" data-size="original">, Intrinsic Information: ![](<../.gitbook/assets/image (8) (1).png>)
 
 C4.5 uses a pruning technique based on statistical confidence estimates. This technique has the advantage that it allows all of the available labeled data to be used for training. C4.5 compares the upper limits of the error confidence intervals for the two trees. For the unpruned tree, the upper error estimate is calculated as a weighted average over its child leaves. Whichever tree has a lower estimated upper limit on the error rate "wins" and is selected.
 
 #### CART
 
-The Gini index is a metric for the classification tasks in CART. It stores the sum of squared probabilities of each class. It computes the degree of probability of a specific variable that is wrongly being classified when chosen randomly and a variation of the Gini coefficient.  The degree of the Gini index varies from 0 to 1. ![](<../.gitbook/assets/image (7).png>)
+The Gini index is a metric for the classification tasks in CART. It stores the sum of squared probabilities of each class. It computes the degree of probability of a specific variable that is wrongly being classified when chosen randomly and a variation of the Gini coefficient.  The degree of the Gini index varies from 0 to 1. ![](<../.gitbook/assets/image (7) (1).png>)
 
 * Where 0 depicts that all the elements are allied to a certain class, or only one class exists there.
 * The Gini index of value 1 signifies that all the elements are randomly distributed across various classes, and
