@@ -10,4 +10,4 @@ description: A collection of DS interview prep by Yuhao Chen
 4. SQL
 5. Data Structure and Algorithm
 6. Applied Data Science
-7. [Behavior Questions](behavioral-questions.md)
+7. [Behavior Questions](behavioral-questions/)
