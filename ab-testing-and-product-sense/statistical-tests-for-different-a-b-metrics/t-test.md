@@ -6,17 +6,23 @@
 
 #### **Student’s t-test:**
 
-**Test statistic:** (x1 – x2)  /  sp(√1/n1 + 1/n2)
+When the sample size is small, the assumption of the central limit theorem does not hold, since the estimates of  σ2 become unreliable. One therefore has to resort to the t-distribution. The t-test requires some constraints to be fulfilled:
 
-where x1 and x2 are the sample means, n1 and n2 are the sample sizes for sample 1 and sample 2, respectively, and where sp is calculated as:
+* the variances have to be equal
+* the samples have to be independent of each other
+* the samples have to follow a normal distribution
 
-sp = √ (n1-1)s12 +  (n2-1)s22 /  (n1+n2-2)
+Since we assume that σ12 and σ22 are equal, we can compute a pooled variance sp2. The rational for pooling the variances is to obtain a better estimate. The pooled variance is a weighted sum of variances. So when n1 equals n2, sp2 is just the average of the individual variances. The overall degrees of freedom is the sum of the individual degrees of freedom for the two samples:
 
-where s12 and s22 are the sample variances.
+df = df1 +df2 = (n1-1) + (n2-1) = n1+ n2 - 2.
 
-**Degrees of freedom:** n1 + n2 – 2
+In order to apply a two-sample t-test you should follow the scheme shown below:
+
+<figure><img src="../../.gitbook/assets/hl_explain_2s_ttest_sml.png" alt=""><figcaption></figcaption></figure>
 
 #### **Welch’s t-test**
+
+<figure><img src="../../.gitbook/assets/hl_explain_welch_test.png" alt=""><figcaption></figcaption></figure>
 
 **Test statistic:** (x1 – x2)  /  (√s12/n1 + s22/n2)
 

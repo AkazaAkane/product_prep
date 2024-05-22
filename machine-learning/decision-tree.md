@@ -82,5 +82,5 @@ The complexity parameter is used to define the cost-complexity measure, Rα(T) o
 
 This method penalize larger trees.
 
-****
+
 

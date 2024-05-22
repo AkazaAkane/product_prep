@@ -59,7 +59,7 @@ In this approach, we control the expected value of the proportion of false posit
 
 ![](https://miro.medium.com/max/1400/0\*a5HxI0uZ26rfuSjE)
 
-One method to achieve this is using the Benjamini-Hochberg correction. **** This method’s step-by-step is as follows:
+One method to achieve this is using the Benjamini-Hochberg correction. This method’s step-by-step is as follows:
 
 * Get the original (raw) P-values of each segment pair
 * Sort ascending the raw P-values
@@ -87,7 +87,7 @@ So we got the weapon to use, let us carry out the analysis for the experiment!
 
 **Third step: Compute adjusted P-values & gather the conclusion.**&#x20;
 
-## Analyze an A/B/C test with Mean-Based Metric <a href="#2cd0" id="2cd0"></a>
+## Analyze an A/B/C test with Mean-Based Metric <a href="#id-2cd0" id="id-2cd0"></a>
 
 Consider an experiment about different promotion strategies. There are three treatments (experiment groups), say:
 
@@ -99,7 +99,7 @@ The metric of interest is the **average transaction amount**. To make the comput
 
 ![Figure 1: Experiment data](https://miro.medium.com/max/1400/1\*JVIYVC0fRroeed7YGYIKtg.png)
 
-### One-Way ANOVA <a href="#2726" id="2726"></a>
+### One-Way ANOVA <a href="#id-2726" id="id-2726"></a>
 
 The first step is to test whether there is at least one group with a different mean. More formally, we want to test the following competing hypotheses.
 
@@ -137,7 +137,7 @@ Below are the concrete steps of our working example above.
 
 ![](https://miro.medium.com/max/1400/1\*sFV9Atum871wAPV9dHRKNA.png)Figure 3: Step 1–3 computation details in spreadsheet![](https://miro.medium.com/max/1400/1\*yRsphiO\_qSZMYD5ZypulXQ.png)Figure 4: The classic ANOVA tabulation (Step 4–9)
 
-## Tukey HSD Post-hoc Test <a href="#96a0" id="96a0"></a>
+## Tukey HSD Post-hoc Test <a href="#id-96a0" id="id-96a0"></a>
 
 Although we previously rejected the null hypotheses in ANOVA, our analysis is not yet complete. The problem is that ANOVA does not reveal which group is the clear winner. So far, the rejection indicates that at least one group has a significantly different mean than the others. Which of these is it? We don’t know.
 

@@ -9,7 +9,7 @@ For example, when testing whether a headache pill is more effective at reducing 
 ![](https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/06/interference2.png)
 
 _A/B testing without interference_\
-&#x20;__&#x20;
+&#x20;
 
 But can we really assume this when doing A/B tests on social networking platforms?
 
@@ -20,7 +20,7 @@ Imagine this: my friend is targeted for an experiment that gives her a better me
 ![](https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/06/interference3.png)
 
 _A/B testing with interference. When treatment leaks into control, we can no longer rely on computing mean(B) – mean(A)._\
-&#x20;__&#x20;
+&#x20;
 
 **Why do we care?**\
 In short, interference can bias the results of an A/B test to the point where it can lead to the wrong decision. For example, one could conclude that a new relevance algorithm has no impact (and stop investing in its development) when it in fact has a positive impact through the network that has simply gone unmeasured. Or, one could think a feature has a positive impact when it’s actually negative. For example, it is not uncommon to see low-quality “viral” content have positive engagement effects on users, but have a negative overall impact. If it’s not worth re-sharing, it has low (or sometimes negative) network effects and decreases the quality of the conversation overall.&#x20;
@@ -46,7 +46,7 @@ We devise a statistical test, inspired from [Hausman tests](https://en.wikipedia
 * ![graphic-of-our-procedure](https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/06/interference4.png)
 
 _Our procedure: A: cluster the graph into 10,000 clusters, B: split these between two arms (individually-randomized and cluster-randomized), C: assign treatment (individually for the first arm, by cluster for the second one), D: compute the effect and variance for each, E: compare._\
-&#x20;__&#x20;
+&#x20;
 
 **Making the clusters**\
 As you can see in the above figure, the first step of our procedure is to create clusters of LinkedIn members. This is a difficult task, given that we do not have naturally isolated communities. We connect the world’s professionals, and a great number of our members have many connections spanning the entire globe, and naturally belong to many communities: their industries, their friends, coworker groups from their current jobs, as well as several groups from their previous jobs. However, for the purposes of this analysis, it is important to make sure that a member belongs to one cluster only.&#x20;
