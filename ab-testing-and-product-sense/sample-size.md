@@ -30,7 +30,7 @@ You will need the **baseline conversion rate (bcr)** and the **minimum detectabl
 
 ![](<../.gitbook/assets/image (2).png>)
 
-### Productds
+### Products
 
 In the majority of cases, test sample size depends on 3 parameters:\
 &#x20;
@@ -43,9 +43,7 @@ In the majority of cases, test sample size depends on 3 parameters:\
    &#x20;
 
 Sample size increases the smaller the significance level, the higher the power, and the smaller the minimum effect. In practice, power and significance level are pretty much always 0.8 and 0.05. So what really affects sample size is the minimum effect.\
-&#x20;
-
-Minimum effect is a business decision more than anything else, not really a data scientist decision. At work, it will typically be a product manager decision. After all, for that you need to take into account things like engineering costs, time, and opportunity-cost of not using those resources to run other tests. And that requires a comprehensive company vision which is typical of product managers, or VP/Director of product in smaller companies.\
+\
 &#x20;
 
 #### Minimum Detectable Effect

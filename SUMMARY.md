@@ -17,6 +17,7 @@
   * [A/B Testing : Pitfalls, Baysian & Math Behind](ab-testing-and-product-sense/a-b-testing-pitfalls-baysian-and-math-behind/README.md)
     * [Network Effect](ab-testing-and-product-sense/a-b-testing-pitfalls-baysian-and-math-behind/network-effect.md)
     * [Novelty Effect](ab-testing-and-product-sense/a-b-testing-pitfalls-baysian-and-math-behind/novelty-effect.md)
+  * [Metrics Type](ab-testing-and-product-sense/metrics-type.md)
   * [Product Sense Questions](ab-testing-and-product-sense/product-sense-questions.md)
   * [Sample Size](ab-testing-and-product-sense/sample-size.md)
   * [A/A test](ab-testing-and-product-sense/a-a-test.md)
