@@ -31,6 +31,7 @@
     * [Multivariate testing](ab-testing-and-product-sense/analyze-a-b-c-test/multivariate-testing.md)
     * [A/B/n Test](ab-testing-and-product-sense/analyze-a-b-c-test/a-b-n-test.md)
     * [Multiple Testing](ab-testing-and-product-sense/analyze-a-b-c-test/multiple-testing.md)
+  * [CUPED](ab-testing-and-product-sense/cuped.md)
 * [Applied Data Science](applied-data-science/README.md)
   * [Missing Data](applied-data-science/missing-data.md)
 * [xgboost](xgboost.md)
